@@ -65,11 +65,8 @@ body {
 }
 
 /* Кнопка меню - гамбургер */
-#burger-checkbox {
-    display: none;
-}
 
-.burger-label {
+.burger {
     position: absolute;
     right: 48px;
     top: 3px;
@@ -90,9 +87,9 @@ body {
     margin-bottom: 2px;
 }
 
-/* 1 секция главной страницы - Acquaintance-model-s и шрифты */
+/* 1 секция главной страницы - Acquaintance-model и шрифты */
 
-.acquaintance-model-s {
+.acquaintance-model {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -145,20 +142,20 @@ body {
     font-size: 25px;
 }
 
-/* Заголовок и подзаголовок acquaintance-model-s */
+/* Заголовок и подзаголовок acquaintance-model */
 
-.acquaintance-model-s__heading {
+.acquaintance-model__heading {
     font-weight: 600;
     font-size: 90px;
 }
 
-.acquaintance-model-s__text {
+.acquaintance-model__text {
     margin-bottom: 27px;
 }
 
-/* Блок с background и картинкой Tesla для секции acquaintance-model-s */
+/* Блок с background и картинкой Tesla для секции acquaintance-model */
 
-.acquaintance-model-s__tesla-background {
+.acquaintance-model__tesla-background {
     position: absolute;
     top: 28%;
     width: 100%;
@@ -171,14 +168,14 @@ body {
     margin-bottom: 18px;
 }
 
-.acquaintance-model-s__tesla-img {
+.acquaintance-model__tesla-img {
     width: 50%;
     min-width: 300px;
 }
 
 /* Общий wrapper для features и action-buttons */
 
-.acquaintance-model-s__specification {
+.acquaintance-model__specification {
     width: 100%;
     text-align: center;
     margin-bottom: 37px;
@@ -186,7 +183,7 @@ body {
 
 /* Общий блок для features */
 
-.acquaintance-model-s__feature-wrapper {
+.acquaintance-model__feature-wrapper {
     text-align: left;
     display: inline-flex;
     margin-right: 81px;
@@ -201,17 +198,17 @@ body {
     background-position: left;
 }
 
-.acquaintance-model-s__feature-wrapper > .feature:not(:last-child) {
+.acquaintance-model__feature-wrapper > .feature:not(:last-child) {
     margin-right: 78px;
 }
 
-.acquaintance-model-s__speed-statistic {
+.acquaintance-model__speed-statistic {
     background-image: url(../images/speed.svg);
     background-size: 30%;
     padding-left: 55px;
 }
 
-.acquaintance-model-s__mileage-statistic {
+.acquaintance-model__mileage-statistic {
     background-image: url(../images/road.svg);
     background-size: 20%;
     padding-left: 35px;
@@ -282,15 +279,15 @@ body {
     cursor: pointer;
 }
 
-/* 2 секция главной страницы - comfort-model-s и заголовок */
+/* 2 секция главной страницы - comfort-model и заголовок */
 
-.comfort-model-s {
+.comfort-model {
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 
-.comfort-model-s__background {
+.comfort-model__background {
     position: absolute;
     top: 0;
     left: 0;
@@ -303,7 +300,7 @@ body {
     z-index: -1;
 }
 
-.comfort-model-s__heading {
+.comfort-model__heading {
     font-weight: 600;
     font-size: 70px;
     color: #E51937;
@@ -312,10 +309,10 @@ body {
 
 /* Общий блок "Будущее вождения" */
 
-.comfort-model-s__topic {
-    width: 30%;
-    min-width: 360px;
+.comfort-model__topic {
+    width: 440px;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     background-color: #e51937;
     padding: 51px 52px 63px 52px;
@@ -328,25 +325,25 @@ body {
     margin-bottom: 10px;
 }
 
-.comfort-model-s__topic > .standart-text {
+.comfort-model__topic > .standart-text {
     margin-bottom: 54px;
 }
 
 /* Общий wrapper для features */
 
-.comfort-model-s__feature-wrapper {
+.comfort-model__feature-wrapper {
     display: flex;
     flex-direction: column;
     margin-bottom: 171px;
 }
 
-.comfort-model-s__feature-wrapper > .feature:not(:last-of-type) {
+.comfort-model__feature-wrapper > .feature:not(:last-of-type) {
     margin-bottom: 35px;
 }
 
 /* Преимущества */
 
-.comfort-model-s__display {
+.comfort-model__display {
     background-image: url(../images/phone.svg);
     background-repeat: no-repeat;
     background-position: left center;
@@ -354,7 +351,7 @@ body {
     padding-left: 50px;
 }
 
-.comfort-model-s__wifi {
+.comfort-model__wifi {
     background-image: url(../images/wifi.svg);
     background-repeat: no-repeat;
     background-size: 40px;
@@ -362,7 +359,7 @@ body {
     padding-left: 50px;
 }
 
-.comfort-model-s__baggage-scope {
+.comfort-model__baggage-scope {
     background-image: url(../images/fuel.svg);
     background-repeat: no-repeat;
     background-size: 30px;
@@ -374,7 +371,7 @@ body {
 
 .action-btn_more-info {
     position: relative;
-    margin-right: 40px;
+    margin-right: 20px;
     padding-left: 30px;
 }
 
@@ -410,9 +407,9 @@ body {
     transition: .5s;
 }
 
-/* 3 секция - safety_model-s */
+/* 3 секция - safety_model */
 
-.safety-model-s {
+.safety-model {
     display: flex;
     align-items: center;
     position: relative;
@@ -420,10 +417,10 @@ body {
 
 /* Основной контент секции */
 
-.safety-model-s__topic {
-    width: 30%;
-    min-width: 360px;
+.safety-model__topic {
+    width: 440px;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     padding: 51px 52px 63px 52px;
     background-color: #e51937;
@@ -439,30 +436,30 @@ body {
     margin-bottom: 26px;
 }
 
-.safety-model-s__topic > .standart-text {
+.safety-model__topic > .standart-text {
     margin-bottom: 49px;
 }
 
- .safety-model-s__general-rating-wrapper {
+ .safety-model__general-rating-wrapper {
     margin-bottom: 101px;
  }
 
  /* Блок рейтинга */
 
-.safety-model-s__star-rating {
+.safety-model__star-rating {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.safety-model-s__pattern-name {
+.safety-model__pattern-name {
     font-weight: bold;
     font-size: 17px;
     text-transform: uppercase;
 }
 
-.safety-model-s__pattern-rating {
+.safety-model__pattern-rating {
     width: 125px;
     height: 23px;
     background-image: url(../images/star.svg);
@@ -471,12 +468,12 @@ body {
 
 /* Преимущество - безопасность */
 
-.safety-model-s__best-safeness-wrapper {
+.safety-model__best-safeness-wrapper {
     display: flex;
     justify-content: center;
 }
 
-.safety-model-s__best-safeness {
+.safety-model__best-safeness {
     background-image: url(../images/security.svg);
     background-repeat: no-repeat;
     background-size: 55px;
@@ -487,24 +484,24 @@ body {
 
 /* Background секция и изображение */
 
-.safety-model-s__image-wrap {
+.safety-model__image-wrap {
     position: relative;
+    width: calc(100% - 440px)
 }
 
-.safety-model-s__background {
+.safety-model__background {
     height: 100%;
     width: 100%;
     position: absolute;
     top: -5px;
-    background-image: url(../images/model-s-bg.png);
+    background-image: url(../images/model-bg.png);
     background-repeat: no-repeat;
     background-size: 70%;
     background-position: right top;
 }
 
-.safety-model-s__tesla-constructor-img {
+.safety-model__tesla-constructor-img {
     width: 100%;
-    min-width: 300px;
     margin-left: -80px;
     z-index: 1;
     opacity: .99;
@@ -545,18 +542,6 @@ body {
     .header__shop {
         margin-right: 20px;
     }
-
-    /* Блоки и кнопки 2 и 3 секции */
-
-    .comfort-model-s__topic,
-    .safety-model-s__topic {
-        min-width: 340px;
-    }
-
-    .action-btn_more-info {
-        margin-right: 20px;
-    }
-
 }
 
 @media (max-width: 960px) {
@@ -572,17 +557,17 @@ body {
         display: none;
     }
 
-    .burger-label {
+    .burger {
         right: 21px;
     }
 
     /* 1 секция главной страницы */
 
-    .acquaintance-model-s__specification {
+    .acquaintance-model__specification {
         flex-wrap: wrap;
     }
 
-    .acquaintance-model-s__feature-wrapper {
+    .acquaintance-model__feature-wrapper {
         margin-right: 0;
         margin-bottom: 43px;
         width: 100%;
@@ -591,67 +576,66 @@ body {
 
     /* 2 секция главной страницы */
 
-    .comfort-model-s {
+    .comfort-model {
         flex-direction: column;
     }
 
-    .comfort-model-s__heading {
+    .comfort-model__heading {
         display: none;
     }
 
-    .comfort-model-s__background {
+    .comfort-model__background {
         position: static;
         width: auto;
-        height: auto;
         min-height: 300px;
         background-size: cover;
         background-position-x: 65%;
         background-position-y: 11%;
     }
 
-    .comfort-model-s__topic {
+    .comfort-model__topic {
         width: auto;
     }
 
-    .comfort-model-s__feature-wrapper {
+    .comfort-model__feature-wrapper {
         margin-bottom: 70px;
     }
 
     /* 3 секция главной страницы */
 
-    .safety-model-s {
+    .safety-model {
         flex-direction: column-reverse;
     }
 
-    .safety-model-s__topic {
+    .safety-model__topic {
         width: auto;
     }
 
-    .safety-model-s__general-rating-wrapper {
+    .safety-model__general-rating-wrapper {
         margin-bottom: 50px;
     }
 
-    .safety-model-s__star-rating {
+    .safety-model__star-rating {
         width: 35%;
         min-width: 300px;
     }
 
-    .safety-model-s__best-safeness-wrapper {
+    .safety-model__best-safeness-wrapper {
         justify-content: flex-start;
     }
 
-    .safety-model-s__image-wrap {
+    .safety-model__image-wrap {
         width: 100%;
         padding: 57px 0 32px 0;
     }
 
-    .safety-model-s__background {
+    .safety-model__background {
         top: 50px;
         background-position: center top;
         background-size: contain;
     }
 
-    .safety-model-s__tesla-constructor-img {
+    .safety-model__tesla-constructor-img {
         margin-left: 0;
     }
 
@@ -664,19 +648,23 @@ body {
 
     /* 1 секция главной страницы */
 
-    .acquaintance-model-s__tesla-background {
+    .acquaintance-model {
+        padding: 58px 0 0 0;
+    }
+
+    .acquaintance-model__tesla-background {
         top: 22%;
     }
 
-    .acquaintance-model-s__heading {
+    .acquaintance-model__heading {
         font-size: 50px;
     }
 
     /* 2 секция главной страницы */
 
-    /* .comfort-model-s__background {
+    .comfort-model__background {
         height: 40vh;
-    } */
+    }
 }
 
 @media (max-width: 480px) {
@@ -701,54 +689,54 @@ body {
         margin-right: 10px;
     }
 
-    .safety-model-s__topic > .call-to-action,
-    .comfort-model-s__topic > .call-to-action {
+    .safety-model__topic > .call-to-action,
+    .comfort-model__topic > .call-to-action {
         display: none;
     }
 
     /* Шрифты */
 
-    .comfort-model-s__topic > .standart-text,
-    .safety-model-s__topic > .standart-text {
+    .comfort-model__topic > .standart-text,
+    .safety-model__topic > .standart-text {
         margin-bottom: 34px;
     }
 
     /* 1 секция главной страницы */
 
-    .comfort-model-s__topic {
+    .comfort-model__topic {
         box-sizing: border-box;
         min-width: 320px;
         padding: 18px 29px 34px 29px;
     }
 
-    .acquaintance-model-s__feature-wrapper > .feature:not(:last-child) {
+    .acquaintance-model__feature-wrapper > .feature:not(:last-child) {
         margin-right: 41px;
     }
 
     /* 2 секция главной страницы */
 
-    .comfort-model-s__feature-wrapper {
+    .comfort-model__feature-wrapper {
         display: none;
     }
 
 
     /* 3 секция главной страницы */
 
-    .safety-model-s__topic {
+    .safety-model__topic {
         box-sizing: border-box;
         min-width: 320px;
         padding: 18px 29px 34px 29px;
     }
 
-    .safety-model-s__topic > .feature-heading {
+    .safety-model__topic > .feature-heading {
         display: none;
     }
 
-    .safety-model-s__general-rating-wrapper {
+    .safety-model__general-rating-wrapper {
         display: none;
     }
 
-    .safety-model-s__best-safeness-wrapper {
+    .safety-model__best-safeness-wrapper {
         display: none;
     }
 }
