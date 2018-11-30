@@ -42,14 +42,10 @@
         text-align: left;
         display: inline-flex;
         margin-right: 81px;
-    }
-
-    &__feature-wrapper {
         & > .feature:not(:last-child) {
             margin-right: 78px;
         }
     }
-
     &__speed-statistic {
         background-image: resolve('speed.svg');
         background-size: 30%;

@@ -137,8 +137,8 @@ gulp.task('stylelint', () => {
         .pipe(postcss([
             stylelint(rulesStyles),
             reporter({
-                clearReportedMessages: true,
-                throwError: false
+                clearReportedMessages: false,
+                throwError: true
             })
         ]));
 });
