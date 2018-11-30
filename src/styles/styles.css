@@ -98,7 +98,7 @@ body {
         height: 22px;
         left: 0;
         top: calc(50% - 11px);
-        background-image: resolve('steering-wheel.svg');
+        background-image: inline('../images/steering-wheel.svg');
         background-repeat: no-repeat;
         background-size: 22px;
         transition: .5s;
@@ -108,7 +108,7 @@ body {
         color: var(--tesla-red);
         transition: .5s;
         &::before {
-            background-image: resolve('steering-wheel-red.svg');
+            background-image: inline('../images/steering-wheel-red.svg');
             transition: .5s;
         }
     }
@@ -133,7 +133,7 @@ body {
     padding-left: 30px;
 
     &:hover::before {
-        background-image: resolve('active-ellipse.svg');
+        background-image: inline('../images/active-ellipse.svg');
         transition: .5s;
     }
 
@@ -144,7 +144,7 @@ body {
         height: 22px;
         left: 0;
         top: calc(50% - 11px);
-        background-image: resolve('info.svg');
+        background-image: inline('../images/info.svg');
         background-repeat: no-repeat;
         background-size: 22px;
         transition: .5s;

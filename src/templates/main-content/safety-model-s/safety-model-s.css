@@ -30,7 +30,7 @@
     &__pattern-rating {
         width: 125px;
         height: 23px;
-        background-image: resolve('star.svg');
+        background-image: inline('../images/star.svg');
         background-repeat: 5, 0;
     }
     &__best-safeness-wrapper {
@@ -38,7 +38,7 @@
         justify-content: center;
     }
     &__best-safeness {
-        background-image: resolve('security.svg');
+        background-image: inline('../images/security.svg');
         background-repeat: no-repeat;
         background-size: 55px;
         background-position: left center;
@@ -54,7 +54,7 @@
         width: 100%;
         position: absolute;
         top: -5px;
-        background-image: resolve('model-s-bg.png');
+        background-image: inline('../images/model-s-bg.png');
         background-repeat: no-repeat;
         background-size: 70%;
         background-position: right top;

@@ -20,7 +20,7 @@
         width: 100%;
         height: 130px;
         text-align: center;
-        background-image: resolve('tesla-wordmark-bg.png');
+        background-image: inline('../images/tesla-wordmark-bg.png');
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center;
@@ -47,13 +47,13 @@
         }
     }
     &__speed-statistic {
-        background-image: resolve('speed.svg');
+        background-image: inline('../images/speed.svg');
         background-size: 30%;
         padding-left: 55px;
     }
 
     &__mileage-statistic {
-        background-image: resolve('road.svg');
+        background-image: inline('../images/road.svg');
         background-size: 20%;
         padding-left: 35px;
     }
