@@ -116,7 +116,7 @@ gulp.task('build-css', () => {
 gulp.task('browser-sync', () => {
     browserSync.init({
         server: {
-            baseDir: './'
+            baseDir: 'build/'
         }
     });
     gulp.watch(paths.src.scripts, ['js-watch']);
